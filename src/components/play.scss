@@ -1,0 +1,88 @@
+.play {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-bottom-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.play-main {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  margin: 4px 0;
+  scroll-behavior: smooth;
+  .lyric {
+    color: #888;
+    line-height: 24px;
+  }
+}
+
+.control {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  font-size: 32px;
+  padding: 28px 12px;
+  color: #444444;
+}
+
+.play-bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  border-top: 1px solid #eee;
+}
+
+.play-top {
+  color: #444;
+  flex: 0 0 auto;
+  padding: 6px 0;
+}
+
+.progress {
+  width: 100%;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+.progress-bar {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+  top: 0;
+}
+
+.progress-bar-ing {
+  height: 2px;
+  transform: translateY(-50%);
+  width: 30%;
+  background-color: #ff0000;
+  &::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff0000;
+    display: block;
+    position: relative;
+    margin-left: 100%;
+    top: -1px;
+  }
+}
+.currentTime {
+  position: absolute;
+  left: 10px;
+}
+.duration {
+  position: absolute;
+  right: 10px;
+}
+
+.ly-line.active {
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="referrer" content="no-referrer" />
+
+  <meta name="applicable-device" content="mobile">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FNQX</title>
+</head>
+
+<body>
+  <!-- Dependencies -->
+
+  <script src="react.development.js"></script>
+  <script src="react-dom.development.js"></script>
+  <link type="text/css" rel="stylesheet" href="/vendors/fonts/sfont.css" />
+
+
+  <div id="index"></div>
+<script type="text/javascript" src="index.bundle.js"></script></body>
+
+</html>

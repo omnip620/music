@@ -1,0 +1,43 @@
+$bs: 0px 1px 0px rgb(245, 234, 234);
+$bc: 1px solid rgb(228, 228, 228);
+@mixin height {
+  height: 32px;
+  line-height: 32px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-prefix,
+.search-suffix {
+  width: 16px;
+  @include height();
+  display: inline-block;
+  border: $bc;
+  box-shadow: $bs;
+}
+
+.search-main {
+  border: $bc;
+  @include height();
+  box-shadow: $bs;
+  border-right: none;
+  border-left: none;
+  width: 70%;
+  outline: none;
+}
+
+.search-prefix {
+  border-right: none;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.search-suffix {
+  border-left: none;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}

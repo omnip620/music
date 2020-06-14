@@ -1,0 +1,57 @@
+.pw {
+  position: fixed;
+  bottom: 0;
+  padding: 0 4px;
+  background-color: #f9f9f9;
+  width: 100vw;
+  height: 60px;
+
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.pw-to {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.pw-logo {
+  border-radius: 50%;
+}
+
+.pw-logo-rotate {
+  animation: 8s linear infinite lra;
+}
+
+@keyframes lra {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pw-play {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: #000000;
+}
+.pw-info {
+  margin-left: 14px;
+  color: #6d6d6d;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 18px;
+}
+.pw-name {
+  color: #444;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 70vw;
+}

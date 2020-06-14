@@ -1,0 +1,16 @@
+.tag {
+  text-align: center;
+  margin: 20px auto 12px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  span {
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      color: rgb(71, 71, 71);
+    }
+  }
+}

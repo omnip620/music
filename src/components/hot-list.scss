@@ -1,0 +1,63 @@
+.hot-list {
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  // margin-bottom: 60px;
+  .li {
+    height: 60px;
+    padding: 0 12px;
+    box-shadow: 0 1px 0 #eee;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: #000;
+      }
+    }
+  }
+}
+.source {
+  position: relative;
+  float: left;
+  height: 55px;
+  width: 55px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 0.9em;
+  margin-top: 0.25em;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .cover {
+    border-radius: 25px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    margin: 0.7em 0 0.1em 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #333333;
+  }
+  .singer {
+    color: #6d6d6d;
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.infinite {
+  overflow-y: scroll;
+}
+body {
+  overflow: hidden;
+}
